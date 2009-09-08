@@ -23,7 +23,9 @@ module ThreadedRspec
       threads = []
       @thread_count.times do
         threads << Thread.new(queue, @options) do |q, opts|
-          success &= q.pop.run(opts) while !q.empty?
+          while !q.empty?
+            success &= q.pop.run(opts)
+          end
         end
       end
       threads.each{|t| t.join}
