@@ -1,9 +1,10 @@
 = threaded-rspec
 
-Description goes here.
+This gem provides an rspec runner intended for use with tests like Selenium Grid
+that require local parallelization but use minimal local resources.
 
 == Note on Patches/Pull Requests
- 
+
 * Fork the project.
 * Make your feature addition or bug fix.
 * Add tests for it. This is important so I don't break it in a
