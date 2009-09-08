@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{threaded-rspec}
-  s.version = "0.1.0"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Rusty Burchfield"]
@@ -26,7 +26,8 @@ Gem::Specification.new do |s|
      "lib/threaded_rspec.rb",
      "lib/threaded_rspec/example_group_runner.rb",
      "spec/spec_helper.rb",
-     "spec/threaded-rspec_spec.rb"
+     "spec/threaded-rspec_spec.rb",
+     "threaded-rspec.gemspec"
   ]
   s.homepage = %q{http://github.com/GICodeWarrior/threaded-rspec}
   s.rdoc_options = ["--charset=UTF-8"]
