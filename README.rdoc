@@ -1,7 +1,8 @@
 = threaded-rspec
 
-This gem provides an rspec runner intended for use with tests like Selenium Grid
-that require local parallelization but use minimal local resources.
+This gem provides an rspec runner intended for use with targets like
+Selenium Grid that require local parallelization but use minimal local
+resources.
 
 == Note on Patches/Pull Requests
 
@@ -11,7 +12,7 @@ that require local parallelization but use minimal local resources.
   future version unintentionally.
 * Commit, do not mess with rakefile, version, or history.
   (if you want to have your own version, that is fine but
-   bump version in a commit by itself I can ignore when I pull)
+  bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
 == Copyright
