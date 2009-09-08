@@ -1,17 +1,17 @@
 module ThreadedRspec
   class ExampleGroupRunner < Spec::Runner::ExampleGroupRunner
-    def initialize(options)
+    def initialize(options, thread_count)
       super(options)
       @options = options
-      @thread_count = 1
+      @thread_count = thread_count.to_i
 
-      parser = OptionParser.new do |p|
-        p.on('--thread-count N', Integer,
-             'Number of concurrent threads.') do |n|
-          @thread_count = n
-        end
-      end
-      parser.parse!(options.argv)
+#      parser = OptionParser.new do |p|
+#        p.on('--thread-count N', Integer,
+#             'Number of concurrent threads.') do |n|
+#          @thread_count = n
+#        end
+#      end
+#      parser.parse!(options.argv)
     end
 
     def run
